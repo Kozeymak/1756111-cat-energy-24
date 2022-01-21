@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Energy форма</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <picture class="header__images">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)" />
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)" />
+          <img src="img/logo-mobile.svg" srcset="img/logo-tablet.svg 768w" sizes="" alt="Cat Energy - Функциональное питание для котов" width="33" height="38" class="header__logo">
+          <!--Я пока не до конца понимаю, как настроить sizes. Когда буду писать стили, сделаю размеры для десктопа и планшета, тогда уже буду настраивать-->
+        </picture>
+        <img src="img/logo-text.svg" alt="Cat Energy" class="header__logo-text">
+      </a>
+      <nav class="header__navigation navigation">
+        <button class="navigation__toggle">
+          <span class="visually-hidden">Открыть / Закрыть меню</span>
+        </button>
+        <ul class="navigation__list list-reset">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="catalog.html" class="navigation__link">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a href="form.html" class="navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="selection">
+        <h1 class="selection__title">Подбор программы</h1>
+        <p class="selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form action="#" class="selection__form form">
+          <ul class="form__specifications specifications list-reset">
+            <li class="specifications__item">
+              <label for="name" class="specifications__label">Имя:*</label>
+              <input type="text" placeholder="Барсик" id="name" class="specifications__input">
+            </li>
+            <li class="specifications__item">
+              <label for="weight" class="specifications__label">Вес (Кг):*</label>
+              <input type="number" placeholder="7" id="weight" class="specifications__input">
+            </li>
+            <li class="specifications__item">
+              <label for="age" class="specifications__label">Возраст (Лет):*</label>
+              <input type="number" placeholder="7" id="age" class="specifications__input">
+            </li>
+          </ul>
+          <ul class="form__purpose purpose list-reset">
+            <li class="purpose__item">
+              <input type="radio" id="loss" name="purpose" class="purpose__input" checked>
+              <label for="loss" class="purpose__label">Похудение</label>
+            </li>
+            <li class="purpose__item">
+              <input type="radio" id="get" name="purpose" class="purpose__input">
+              <label for="get" class="purpose__label">Набор массы</label>
+            </li>
+            <li class="purpose__item">
+              <input type="radio" id="dnk" name="purpose" class="purpose__input">
+              <label for="dnk" class="purpose__label">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+          <h3 class="footer__add-info">Контактные данные (владельца кота)</h3>
+          <ul class="form__feedback feedback list-reset">
+            <li class="feedback__item">
+              <label for="email" class="feedback__label">E-mail:*</label>
+              <input type="email" placeholder="kuklachev@gmail.com" id="email" class="feedback__input">
+            </li>
+            <li class="feedback__item">
+              <label for="number" class="feedback__label">Телефон:*</label>
+              <input type="number" placeholder="8 (960) 900-60-90" id="number" class="feedback__input">
+            </li>
+          </ul>
+          <h3 class="footer__add-info">Комментарий</h3>
+          <textarea name="habits" id="habits" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота" class="footer__habits"></textarea>
+          <h3 class="footer__add-info">Дополнительно</h3>
+          <ul class="form__preferences preferences list-reset">
+            <li class="preferences__item">
+              <input type="checkbox" id="sugarreplace" class="preferences__input" checked>
+              <label for="sugarreplace" class="preferences__label">Сахарозаменитель</label>
+            </li>
+            <li class="preferences__item">
+              <input type="checkbox" id="water" class="preferences__input">
+              <label for="water" class="preferences__label">Питьевая вода</label>
+            </li>
+            <li class="preferences__item">
+              <input type="checkbox" id="milk" class="preferences__input">
+              <label for="milk" class="preferences__label">Молоко</label>
+            </li>
+            <li class="preferences__item">
+              <input type="checkbox" id="vitamins" class="preferences__input">
+              <label for="vitamins" class="preferences__label">Витамины</label>
+            </li>
+          </ul>
+          <button type="submit" class="form__button button">Отправить заявку</button>
+        </form>
+        <p class="selection__additionally">* — Обязательные поля</p>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img src="img/map.png" alt="Карта" width="320" height="362" class="contacts__map">
+        <img src="img/point-mobile.svg" alt="Местонахождение" width="57" height="53" class="contacts__point">
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="img/footer-logo.svg" alt="Cat Energy" width="128" height="24" class="footer__logo-text">
+      <ul class="footer__list list-reset">
+        <li class="footer__item footer__item--vk">
+          <a href="https://vk.com/htmlacademy" class="footer__socials">
+            <span class="visually-hidden">вконтакте</span>
+          </a>
+        </li>
+        <li class="footer__item footer__item--instagram">
+          <a href="https://www.instagram.com/htmlacademy/" class="footer__socials">
+            <span class="visually-hidden">инстаграм</span>
+          </a>
+        </li>
+        <li class="footer__item footer__item--facebook">
+          <a href="https://www.facebook.com/htmlacademy/" class="footer__socials">
+            <span class="visually-hidden">фейсбук</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__developed">
+        <p class="footer__text">HTML Academy</p>
+        <a href="https://htmlacademy.ru/" class="footer__link">
+          <img src="img/html-icon-mobile.svg" alt="html Academy" width="27" height="34" class="footer__icon">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
