@@ -79,9 +79,7 @@
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__group-title">
-              <h3 class="footer__add-info">Контактные данные (владельца кота)</h3>
-            </legend>
+            <legend class="form__group-title">Контактные данные (владельца кота)</legend>
             <ul class="form__list list-reset">
               <li class="form__field text-field">
                 <label for="email" class="text-field__label">E-mail:*</label>
@@ -95,34 +93,36 @@
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__group-title">
-              <h3 class="footer__add-info">Комментарий</h3>
-            </legend>
-            <label for="habits" class="text-field__label">
-              <textarea name="habits" id="habits" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота" class="text-field__textarea"></textarea>
-            </label>
+            <legend class="form__group-title">Комментарий</legend>
+            <label for="habits" class="text-field__label visually-hidden">Введите комментарий</label>
+            <textarea
+              name="habits"
+              id="habits"
+              cols="30"
+              rows="10"
+              placeholder="Расскажите обо всех повадках кота"
+              class="text-field__input text-field__input--textarea">
+            </textarea>
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__group-title">
-              <h3 class="footer__add-info">Дополнительно</h3>
-            </legend>
+            <legend class="form__group-title">Дополнительно</legend>
             <ul class="form__list list-reset">
-              <li class="form__field radio-item">
-                <input type="checkbox" id="sugarreplace" class="radio-item__input" checked>
-                <label for="sugarreplace" class="radio-item__label">Сахарозаменитель</label>
+              <li class="form__field checkbox-item">
+                <input type="checkbox" id="sugarreplace" class="checkbox-item__input" checked>
+                <label for="sugarreplace" class="checkbox-item__label">Сахарозаменитель</label>
               </li>
-              <li class="form__field radio-item">
-                <input type="checkbox" id="water" class="radio-item__input">
-                <label for="water" class="radio-item__label">Питьевая вода</label>
+              <li class="form__field checkbox-item">
+                <input type="checkbox" id="water" class="checkbox-item__input">
+                <label for="water" class="checkbox-item__label">Питьевая вода</label>
               </li>
-              <li class="form__field radio-item">
-                <input type="checkbox" id="milk" class="radio-item__input">
-                <label for="milk" class="radio-item__label">Молоко</label>
+              <li class="form__field checkbox-item">
+                <input type="checkbox" id="milk" class="checkbox-item__input">
+                <label for="milk" class="checkbox-item__label">Молоко</label>
               </li>
-              <li class="form__field radio-item">
-                <input type="checkbox" id="vitamins" class="radio-item__input">
-                <label for="vitamins" class="radio-item__label">Витамины</label>
+              <li class="form__field checkbox-item">
+                <input type="checkbox" id="vitamins" class="checkbox-item__input">
+                <label for="vitamins" class="checkbox-item__label">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -134,9 +134,9 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__adress adress">
-          <h2 class="adress__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__adress address">
+          <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map map">
           <img src="img/map.png" alt="Карта" width="320" height="362" class="map__img">
