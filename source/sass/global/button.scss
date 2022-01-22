@@ -1,0 +1,14 @@
+.button {
+  display: inline-flex;
+  color: $basic-white;
+  font-family: $font;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: $basic-green;
+}
