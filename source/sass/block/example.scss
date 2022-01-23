@@ -1,0 +1,32 @@
+.example {
+  background-color: $special-grey-3;
+
+  &__title {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  &__bold {
+    font-family: $font;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__thin {
+    color: $basic-grey-2;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+
+  &__total {
+    font-family: $font;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

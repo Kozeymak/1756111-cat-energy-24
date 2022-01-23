@@ -1,0 +1,16 @@
+.form {
+  &__group {
+    border: none; //TODO Этот стиль нужен?
+  }
+
+  &__group-title {
+    font-family: $font;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  &__additional {
+    line-height: 16px;
+    text-align: center;
+  }
+}

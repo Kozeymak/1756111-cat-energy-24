@@ -1,0 +1,10 @@
+.range {
+  &__button {
+    background-color: transparent;
+    color: $basic-black;
+    font-family: $font;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

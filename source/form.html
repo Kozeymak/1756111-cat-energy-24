@@ -46,15 +46,15 @@
             <legend class="form__group-title"></legend>
             <ul class="form__list list-reset">
               <li class="form__field text-field">
-                <label for="name" class="text-field__label">Имя:*</label>
+                <label for="name" class="text-field__label" required>Имя:*</label>
                 <input type="text" placeholder="Барсик" id="name" class="text-field__input">
               </li>
               <li class="form__field text-field">
-                <label for="weight" class="text-field__label">Вес (Кг):*</label>
+                <label for="weight" class="text-field__label" required>Вес (Кг):*</label>
                 <input type="number" placeholder="7" id="weight" class="text-field__input">
               </li>
               <li class="form__field text-field">
-                <label for="age" class="text-field__label">Возраст (Лет):*</label>
+                <label for="age" class="text-field__label" required>Возраст (Лет):*</label>
                 <input type="number" placeholder="7" id="age" class="text-field__input">
               </li>
             </ul>
@@ -82,11 +82,11 @@
             <legend class="form__group-title">Контактные данные (владельца кота)</legend>
             <ul class="form__list list-reset">
               <li class="form__field text-field">
-                <label for="email" class="text-field__label">E-mail:*</label>
+                <label for="email" class="text-field__label" required>E-mail:*</label>
                 <input type="email" placeholder="kuklachev@gmail.com" id="email" class="text-field__input">
               </li>
               <li class="form__field text-field">
-                <label for="number" class="text-field__label">Телефон:*</label>
+                <label for="number" class="text-field__label" required>Телефон:*</label>
                 <input type="number" placeholder="8 (960) 900-60-90" id="number" class="text-field__input">
               </li>
             </ul>
@@ -100,9 +100,10 @@
               id="habits"
               cols="30"
               rows="10"
+              disabled
               placeholder="Расскажите обо всех повадках кота"
               class="text-field__input text-field__input--textarea">
-            </textarea>
+            </textarea><!--TODO Почему placeholder и disabled не работают?-->
           </fieldset>
 
           <fieldset class="form__group">

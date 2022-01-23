@@ -1,0 +1,12 @@
+.selection {
+  &__title{
+    font-family: $font;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__subtitle {
+    font-family: $font;
+    text-transform: uppercase;
+  }
+}

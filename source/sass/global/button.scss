@@ -4,11 +4,17 @@
   font-family: $font;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
-  line-height: 18px;
+  line-height: 20px;
   border: none;
   border-radius: 0;
   padding: 0;
   background-color: $basic-green;
+  text-transform: uppercase;
+
+  &--secondary {
+    background-color: $basic-grey;
+    color: $special-dark-grey;
+  }
 }
