@@ -18,4 +18,11 @@
     color: $basic-black;
     text-transform: uppercase;
   }
+
+  &__list {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }

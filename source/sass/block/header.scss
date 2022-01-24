@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__img-text {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

@@ -3,6 +3,10 @@
     width: 24px;
     height: 16px;
     background-color: red; //для визуального контроля, потом удалю
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &__link {
@@ -13,5 +17,13 @@
     line-height: 20px;
     color: $basic-black;
     text-transform: uppercase;
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 }

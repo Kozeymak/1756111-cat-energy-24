@@ -76,11 +76,13 @@
                 <label for="dnk" class="radio-item__label">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
+          </fieldset> <!--Тут я не стал делать адаптив на десктоп. Хотел посоветоваться с тобой.
+                          Может быть объединить эти два fieldset в один? По мне, это в разы упростит задачу.
+                          Что скажешь? На сколько это разумно?-->
 
           <fieldset class="form__group">
             <legend class="form__group-title">Контактные данные (владельца кота)</legend>
-            <ul class="form__list list-reset">
+            <ul class="form__list form__list--contacts list-reset">
               <li class="form__field text-field">
                 <label for="email" class="text-field__label" required>E-mail:*</label>
                 <input type="email" placeholder="kuklachev@gmail.com" id="email" class="text-field__input">
@@ -108,7 +110,7 @@
 
           <fieldset class="form__group">
             <legend class="form__group-title">Дополнительно</legend>
-            <ul class="form__list list-reset">
+            <ul class="form__list form__list--checkbox list-reset">
               <li class="form__field checkbox-item">
                 <input type="checkbox" id="sugarreplace" class="checkbox-item__input" checked>
                 <label for="sugarreplace" class="checkbox-item__label">Сахарозаменитель</label>
@@ -128,8 +130,10 @@
             </ul>
           </fieldset>
 
-          <button type="submit" class="form__button button">Отправить заявку</button>
-          <p class="form__additionally">* — Обязательные поля</p>
+          <div class="form__end">
+            <button type="submit" class="form__button button">Отправить заявку</button>
+            <p class="form__additionally">* — Обязательные поля</p>
+          </div>
         </form>
 
       </section>

@@ -1,4 +1,15 @@
 .products {
+  display: grid;
+  grid-template-areas: //Это правильно?
+  "A A B B"
+  "A A C C"
+  "D D D D";
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title{
     font-family: $font;
     font-size: 16px;
@@ -11,5 +22,21 @@
     font-size: 12px;
     line-height: 16px;
     color: $special-dark-grey;
+  }
+
+  &__img-link {
+    grid-area: A;
+  }
+
+  &__main-link {
+    grid-area: B;
+  }
+
+  &__compound {
+    grid-area: C;
+  }
+
+  &__button {
+    grid-area: D;
   }
 }

@@ -1,4 +1,8 @@
 .addition {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
   &__title {
     font-family: $font;
     font-size: 16px;
@@ -10,5 +14,9 @@
   &__text {
     line-height: 14px;
     color: $special-dark-grey;
+  }
+
+  &__compound {
+    display: flex;
   }
 }

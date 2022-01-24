@@ -13,4 +13,29 @@
     line-height: 16px;
     text-align: center;
   }
+
+  &__list {
+    &--checkbox {
+      @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+      }
+    }
+
+    &--contacts {
+      @media (min-width: $desktop-width) {
+        display: flex;
+      }
+    }
+  }
+
+  &__end {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
 }

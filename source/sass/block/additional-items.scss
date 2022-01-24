@@ -1,4 +1,8 @@
 .additional-items {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+
   &__title {
     font-family: $font;
     font-size: 24px;

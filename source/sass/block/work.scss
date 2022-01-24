@@ -5,4 +5,19 @@
     line-height: 40px;
     text-align: center;
   }
+
+  &__item {
+    border: 2px solid red; //Чтобы было легче проверить
+  }
+
+  &__list {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex; //что то я не додумался как на гридах сделать
+    }
+  }
 }

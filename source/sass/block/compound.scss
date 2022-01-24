@@ -2,4 +2,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  &__item {
+    display: flex;
+  }
 }

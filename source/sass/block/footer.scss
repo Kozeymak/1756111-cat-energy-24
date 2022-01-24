@@ -1,3 +1,11 @@
 .footer {
   background-color: $basic-grey;
+
+  &__socials {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
