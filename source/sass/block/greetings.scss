@@ -1,5 +1,8 @@
 .greetings {
-  background-color: $basic-green;
+  background-image: url("../../img/index-cat.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 27px;
 
   &__title {
     font-family: $font;
@@ -7,13 +10,25 @@
     line-height: 36px;
     text-align: center;
     color: $basic-white;
+    font-weight: 400;
   }
 
   &__slogan {
+    margin-top: 25px;
     font-family: $font;
     line-height: 14px;
     text-align: center;
     color: $basic-white;
     text-transform: uppercase;
+  }
+
+  &__banner {
+    margin-top: 29px;
+  }
+
+  &__link {
+    margin-top: 3px;
+    padding: 7px 0;
+    width: 100%;
   }
 }

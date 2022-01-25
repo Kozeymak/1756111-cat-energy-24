@@ -1,11 +1,13 @@
 .adress {
   display: flex;
-  
+  padding: 26px 20px 26px;
+
   &__title {
     font-family: $font;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    font-weight: 400;
   }
 
   &__text {

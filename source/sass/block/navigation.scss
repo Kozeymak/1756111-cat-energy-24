@@ -2,7 +2,10 @@
   &__toggle {
     width: 24px;
     height: 16px;
-    background-color: red; //для визуального контроля, потом удалю
+    background-image: url("../../img/burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
 
     @media (min-width: $tablet-width) {
       display: none;

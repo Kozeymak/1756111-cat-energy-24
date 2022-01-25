@@ -5,6 +5,9 @@
 @import "global/body.scss";
 @import "global/button.scss";
 @import "global/list-reset.scss";
+
+//Blocks
+@import "block/container.scss";
 @import "block/navigation.scss";
 @import "block/header.scss";
 @import "block/greetings.scss";
@@ -27,3 +30,4 @@
 @import "block/additional-items.scss";
 @import "block/addition.scss";
 @import "block/description.scss";
+@import "block/slider.scss";

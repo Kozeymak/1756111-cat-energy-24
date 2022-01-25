@@ -1,6 +1,8 @@
 .form {
   &__group {
-    border: none; //TODO Этот стиль нужен?
+    border: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__group-title {
