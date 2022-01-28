@@ -1,5 +1,18 @@
 .slider {
-  &__preview {
-    margin-top: 40px;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $special-grey-3; //Перелив делать гардиентом?
+  }
+
+  &__img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

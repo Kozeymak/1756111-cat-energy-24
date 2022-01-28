@@ -1,4 +1,11 @@
 .range {
+  width: 210px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+  }
+
   &__button {
     background-color: transparent;
     color: $basic-black;

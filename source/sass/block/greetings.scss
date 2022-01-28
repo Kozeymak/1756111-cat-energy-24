@@ -4,6 +4,16 @@
   background-repeat: no-repeat;
   padding-top: 27px;
 
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/index-cat.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
   &__title {
     font-family: $font;
     font-size: 36px;
@@ -11,6 +21,18 @@
     text-align: center;
     color: $basic-white;
     font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      color: $basic-black;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      padding-left: 85px;
+      margin-bottom: 41px;
+      order: 1;
+      width: 500px;
+    }
+
   }
 
   &__slogan {
@@ -20,15 +42,36 @@
     text-align: center;
     color: $basic-white;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      color: $basic-black;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      padding-left: 85px;
+      margin-bottom: 20px;
+      order: 2;
+    }
   }
 
   &__banner {
     margin-top: 29px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      display: block;
+      order: 4;
+    }
   }
 
   &__link {
     margin-top: 3px;
     padding: 7px 0;
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 224px;
+      order: 3;
+    }
   }
 }

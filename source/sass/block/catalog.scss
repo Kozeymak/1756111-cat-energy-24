@@ -3,6 +3,12 @@
     font-family: $font;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 41px;
+
+    @media (min-width: $tablet-width) {
+      //
+    }
   }
 
   &__list {

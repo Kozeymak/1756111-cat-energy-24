@@ -1,9 +1,10 @@
 .products {
   display: grid;
-  grid-template-areas: //Это правильно?
+  grid-template-areas: //TODO Это правильно?
   "A A B B"
   "A A C C"
   "D D D D";
+  padding: 19px 0 25px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -26,6 +27,11 @@
 
   &__img-link {
     grid-area: A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 112px;
   }
 
   &__main-link {
@@ -38,5 +44,6 @@
 
   &__button {
     grid-area: D;
+    height: 40px;
   }
 }

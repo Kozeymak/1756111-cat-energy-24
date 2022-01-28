@@ -1,5 +1,5 @@
 .for-what {
-  padding: 20px 0;
+  padding: 0 0 45px 0;
 
   &__item {
     background-color: $basic-grey;
@@ -26,6 +26,11 @@
     text-transform: uppercase;
     font-weight: 400;
     margin-top: 6px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &__text {
@@ -33,6 +38,10 @@
     padding-bottom: 23px;
     border-bottom: 1px solid $basic-grey-3;
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   &__link {
@@ -45,6 +54,11 @@
     display: flex;
     vertical-align: middle;
 
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
     &::after {
       content: "";
       width: 24px;
@@ -54,6 +68,10 @@
       vertical-align: middle;
       background-size: cover;
       margin-left: 17px;
+
+      @media (min-width: $tablet-width) {
+        margin: auto 0 auto 25px;
+      }
     }
   }
 
