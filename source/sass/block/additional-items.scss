@@ -16,6 +16,11 @@
     background-position: center;
     width: 280px;
     height: 290px;
+
+    @media (min-width: $tablet-width) {
+      width: 92%;
+      height: 200px;
+    }
   }
 
   &__sentence {

@@ -4,6 +4,11 @@
   color: $special-dark-grey;
   width: 142px;
 
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 16px;
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
