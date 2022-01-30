@@ -1,12 +1,18 @@
 .selection {
+  padding: 27px 0 32px;
+
   &__title{
     font-family: $font;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 37px;
   }
 
   &__subtitle {
     font-family: $font;
     text-transform: uppercase;
+    width: 226px;
+    margin-bottom: 39px;
   }
 }

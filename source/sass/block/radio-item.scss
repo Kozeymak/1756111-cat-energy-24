@@ -1,8 +1,46 @@
 .radio-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: 13px;
+  }
+
   &__label {
     color: $special-dark-grey-2;
     font-family: $font;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input + &__label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid $special-grey;
+      border-radius: 100%;
+      margin-right: 15px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  }
+
+  &__input:checked + &__label::before {
+    background-image: url("../../img/radiobutton.svg");
   }
 }
