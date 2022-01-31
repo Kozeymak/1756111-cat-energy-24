@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/body.scss";
+@import "global/button.scss";
+@import "global/list-reset.scss";
+
+//Blocks
+@import "block/container.scss";
+@import "block/navigation.scss";
+@import "block/header.scss";
+@import "block/greetings.scss";
+@import "block/for-what.scss";
+@import "block/work.scss";
+@import "block/example.scss";
+@import "block/range.scss";
+@import "block/contacts.scss";
+@import "block/adress.scss";
+@import "block/footer.scss";
+@import "block/socials.scss";
+@import "block/selection.scss";
+@import "block/form.scss";
+@import "block/text-field.scss";
+@import "block/radio-item.scss";
+@import "block/checkbox-item.scss";
+@import "block/catalog.scss";
+@import "block/products.scss";
+@import "block/compound.scss";
+@import "block/additional-items.scss";
+@import "block/addition.scss";
+@import "block/description.scss";
+@import "block/slider.scss";
+@import "block/map.scss";
+@import "block/products-extra.scss";

@@ -1,0 +1,57 @@
+.checkbox-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+
+  &__label {
+    font-family: $font;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input + &__label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid $special-grey;
+      margin-right: 15px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__input:checked + &__label::before {
+    background-image: url("../../img/checkbox-activ.svg");
+  }
+}

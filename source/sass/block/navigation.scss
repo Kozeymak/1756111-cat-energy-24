@@ -1,0 +1,32 @@
+.navigation {
+  &__toggle {
+    width: 24px;
+    height: 16px;
+    background-image: url("../../img/burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-family: $font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}

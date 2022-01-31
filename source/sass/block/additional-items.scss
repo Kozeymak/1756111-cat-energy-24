@@ -1,0 +1,35 @@
+.additional-items {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row; //Не работает из за контейнера
+  }
+
+  &__title {
+    font-family: $font;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__present {
+    background-image: url("../../img/cat-in-backpack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 280px;
+    height: 290px;
+
+    @media (min-width: $tablet-width) {
+      width: 92%;
+      height: 200px;
+    }
+  }
+
+  &__sentence {
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-white;
+    width: 161px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

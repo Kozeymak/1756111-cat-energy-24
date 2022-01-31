@@ -1,0 +1,20 @@
+.compound {
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+  width: 142px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+}

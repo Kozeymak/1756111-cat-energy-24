@@ -1,0 +1,10 @@
+.map {
+  &__img {
+    margin: 0 auto;
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      //
+    }
+  }
+}

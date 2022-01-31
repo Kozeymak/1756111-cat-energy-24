@@ -1,0 +1,41 @@
+.work {
+  padding-bottom: 49px;
+  &__title {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 60px 80px;
+    }
+  }
+}
