@@ -5,12 +5,21 @@
 
   & + & {
     margin-top: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
   }
 
   &__label {
     font-family: $font;
     font-size: 16px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__input {
@@ -34,6 +43,11 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 50% 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 

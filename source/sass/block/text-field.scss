@@ -14,6 +14,11 @@
     color: $special-dark-grey;
     font-weight: 400;
     margin-right: 10px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__input {
@@ -25,6 +30,11 @@
     background-color: transparent;
     font-weight: 400;
     border: 1px solid $special-dark-grey-3; //TODO Пожалйуста, подскажи как можно сделать длину инпута до упора, я что то не могу догнать
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
 
     &--textarea {
       resize: none;
