@@ -1,6 +1,7 @@
 .additional-items {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row; //Не работает из за контейнера
   }
 
   &__title {

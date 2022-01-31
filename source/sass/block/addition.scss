@@ -9,6 +9,10 @@
     margin: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+  }
+
   &__title {
     font-family: $font;
     font-size: 16px;
@@ -54,6 +58,11 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      margin-top: 0;
     }
   }
 }
