@@ -2,16 +2,19 @@
   background-image: url("../../img/index-cat.png");
   background-position: top;
   background-repeat: no-repeat;
-  padding-top: 27px;
+
+  &__container {
+    margin-top: 27px;
+    position: relative;
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    padding-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/index-cat.png");
-    background-position: top right;
-    background-repeat: no-repeat;
+    padding-bottom: 267px;
   }
 
   &__title {
@@ -29,7 +32,6 @@
       text-align: left;
       padding-left: 85px;
       margin-bottom: 41px;
-      order: 1;
       width: 500px;
     }
 
@@ -49,18 +51,28 @@
       line-height: 20px;
       text-align: left;
       padding-left: 85px;
-      margin-bottom: 20px;
-      order: 2;
+      margin-bottom: 49px;
     }
   }
 
   &__banner {
     margin-top: 29px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      margin: 0 auto;
       display: block;
-      order: 4;
+      position: absolute;
+      width: 709px;
+      height: 609px;
+      z-index: -1;
+      top: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+      top: 0;
+      left: 558px;
     }
   }
 
@@ -71,7 +83,9 @@
 
     @media (min-width: $tablet-width) {
       width: 224px;
-      order: 3;
+      margin-left: 85px;
+      margin-top: 0;
+      padding: 17px 0;
     }
   }
 }

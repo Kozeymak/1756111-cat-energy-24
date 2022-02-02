@@ -2,8 +2,15 @@
   background-color: $special-grey-3;
   padding: 25px 0 40px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $basic-white;
+  &__container {
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
+  &__report {
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {

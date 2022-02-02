@@ -20,6 +20,10 @@
     line-height: 20px;
     color: $basic-black;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+    }
   }
 
   &__list {
@@ -27,6 +31,14 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
+    }
+  }
+
+  &__item {
+    & + & {
+      @media (min-width: $tablet-width) {
+        margin-left: 35px;
+      }
     }
   }
 }
