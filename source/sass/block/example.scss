@@ -1,6 +1,6 @@
 .example {
   background-color: $special-grey-3;
-  padding: 25px 0 40px;
+  padding: 25px 0 45px;
 
   &__container {
     @media (min-width: $desktop-width) {
@@ -17,7 +17,6 @@
     font-family: $font;
     font-size: 36px;
     line-height: 40px;
-    text-align: center;
     font-weight: 400;
 
     @media (min-width: $tablet-width) {

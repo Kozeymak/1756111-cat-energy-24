@@ -1,5 +1,6 @@
 .work {
   padding-bottom: 49px;
+
   &__title {
     font-family: $font;
     font-size: 36px;
@@ -13,9 +14,40 @@
     }
   }
 
+  &__text {
+    display: block;
+    width: 200px;
+  }
+
   &__item {
     margin-bottom: 20px;
     display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      margin-right: 20px;
+    }
+
+    &--leaf::before {
+      background-image: url(../../img/icon_leaf.svg);
+    }
+
+    &--powder::before {
+      background-image: url(../../img/icon_powder.svg);
+    }
+
+    &--fork::before {
+      background-image: url(../../img/icon_fork.svg);
+    }
+
+    &--clock::before {
+      background-image: url(../../img/icon_clock.svg);
+    }
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
