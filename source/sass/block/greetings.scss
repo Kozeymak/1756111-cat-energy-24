@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
 
   &__container {
-    padding-top: 29px;
+    padding-top: 50px;
     position: relative;
   }
 
@@ -53,6 +53,7 @@
       text-align: left;
       padding-left: 85px;
       margin-bottom: 49px;
+      margin-left: 2px;
     }
   }
 
@@ -62,10 +63,11 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      width: 709px;
+      width: 690px;
       height: 609px;
       z-index: -1;
-      top: 200px;
+      top: 250px;
+      left: 75px;
     }
 
     @media (min-width: $desktop-width) {
@@ -81,13 +83,15 @@
     padding: 10px 0;
     width: 100%;
     font-size: 14px;
-    
+
 
     @media (min-width: $tablet-width) {
-      width: 224px;
-      margin-left: 85px;
+      width: 244px;
+      margin-left: 90px;
       margin-top: 0;
-      padding: 17px 0;
+      padding: 17px 10px;
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }

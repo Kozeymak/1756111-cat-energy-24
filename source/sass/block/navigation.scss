@@ -23,6 +23,8 @@
 
     @media (min-width: $tablet-width) {
       font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 
@@ -35,10 +37,15 @@
   }
 
   &__item {
+    padding-bottom: 5px;
     & + & {
       @media (min-width: $tablet-width) {
-        margin-left: 35px;
+        margin-left: 37px;
       }
+    }
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
     }
   }
 }
