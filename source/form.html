@@ -28,7 +28,7 @@
           <li class="navigation__item">
             <a href="catalog.html" class="navigation__link">Каталог продукции</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--active">
             <a href="form.html" class="navigation__link">Подбор программы</a>
           </li>
         </ul>
@@ -48,16 +48,16 @@
               <legend class="form__group-title"></legend>
               <ul class="form__list list-reset">
                 <li class="form__field text-field">
-                  <label for="name" class="text-field__label" required>Имя:*</label>
-                  <input type="text" placeholder="Барсик" id="name" class="text-field__input">
+                  <label for="name" class="text-field__label text-field__label--name" required>Имя:*</label>
+                  <input type="text" placeholder="Барсик" id="name" class="text-field__input text-field__input--name">
                 </li>
                 <li class="form__field text-field">
-                  <label for="weight" class="text-field__label" required>Вес (Кг):*</label>
-                  <input type="number" placeholder="7" id="weight" class="text-field__input">
+                  <label for="weight" class="text-field__label text-field__label--weight" required>Вес (Кг):*</label>
+                  <input type="number" placeholder="7" id="weight" class="text-field__input text-field__input--weight">
                 </li>
                 <li class="form__field text-field">
-                  <label for="age" class="text-field__label" required>Возраст (Лет):*</label>
-                  <input type="number" placeholder="7" id="age" class="text-field__input">
+                  <label for="age" class="text-field__label text-field__label--age" required>Возраст (Лет):*</label>
+                  <input type="number" placeholder="7" id="age" class="text-field__input text-field__input--age">
                 </li>
               </ul>
             </fieldset>
@@ -78,20 +78,20 @@
                   <label for="dnk" class="radio-item__label">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
-            </fieldset> <!--Тут я не стал делать адаптив на десктоп. Хотел посоветоваться с тобой.
+            </fieldset> <!--TODO Тут я не стал делать адаптив на десктоп. Хотел посоветоваться с тобой.
                             Может быть объединить эти два fieldset в один? По мне, это в разы упростит задачу.
                             Что скажешь? На сколько это разумно?-->
 
             <fieldset class="form__group">
               <legend class="form__group-title">Контактные данные (владельца кота)</legend>
               <ul class="form__list form__list--contacts list-reset">
-                <li class="form__field text-field">
+                <li class="form__field text-field text-field__label--email">
                   <label for="email" class="text-field__label" required>E-mail:*</label>
-                  <input type="email" placeholder="kuklachev@gmail.com" id="email" class="text-field__input">
+                  <input type="email" placeholder="kuklachev@gmail.com" id="email" class="text-field__input text-field__input--email">
                 </li>
                 <li class="form__field text-field">
-                  <label for="number" class="text-field__label" required>Телефон:*</label>
-                  <input type="number" placeholder="8 (960) 900-60-90" id="number" class="text-field__input">
+                  <label for="number" class="text-field__label text-field__label--number" required>Телефон:*</label>
+                  <input type="number" placeholder="8 (960) 900-60-90" id="number" class="text-field__input text-field__input--number">
                 </li>
               </ul>
             </fieldset>
