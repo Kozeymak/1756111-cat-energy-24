@@ -1,0 +1,19 @@
+.slider {
+  margin-top: 40px;
+
+  &__img {
+    margin: 0 auto;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 592px;
+      height: 511px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

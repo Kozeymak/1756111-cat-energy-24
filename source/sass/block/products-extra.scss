@@ -1,0 +1,35 @@
+.products-extra {
+  display: flex;
+  flex-direction: column;
+  padding: 19px 20px 25px;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/plus.svg");
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    margin: 5px auto 24px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-black;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-grey;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+}

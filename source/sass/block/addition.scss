@@ -1,0 +1,69 @@
+.addition {
+  padding: 13px 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 26px 38px 28px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+  }
+
+  &__title {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 16px;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__text {
+    line-height: 14px;
+    color: $special-dark-grey;
+
+    &:last-child {
+      @media (min-width: $tablet-width) {
+        margin-left: 49px;
+      }
+    }
+  }
+
+  &__compound {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+      margin-top: 0;
+    }
+  }
+}

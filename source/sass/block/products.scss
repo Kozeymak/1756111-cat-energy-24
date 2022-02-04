@@ -1,0 +1,98 @@
+.products {
+  display: grid;
+  grid-template-areas: //TODO Это правильно?
+  "A A B B"
+  "A A C C"
+  "D D D D";
+  padding: 19px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 38px 39px 38px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px 34px 39px 39px;
+  }
+
+  &__title{
+    font-family: $font;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-black;
+    width: 76px;
+    margin-right: auto;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      width: 120px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 130px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-grey;
+  }
+
+  &__img-link {
+    grid-area: A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 112px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__main-link {
+    grid-area: B;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__compound {
+    margin-top: 3px;
+    grid-area: C;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__button {
+    margin-top: 12px;
+    grid-area: D;
+    height: 40px;
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+}

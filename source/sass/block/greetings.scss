@@ -1,0 +1,97 @@
+.greetings {
+  background-image: url("../../img/index-cat.png");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  &__container {
+    padding-top: 50px;
+    position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 267px;
+  }
+
+  &__title {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: $basic-white;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+      color: $basic-black;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      padding-left: 85px;
+      margin-bottom: 41px;
+      width: 500px;
+    }
+
+  }
+
+  &__slogan {
+    margin-top: 25px;
+    font-family: $font;
+    line-height: 14px;
+    text-align: center;
+    color: $basic-white;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      color: $basic-black;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      padding-left: 85px;
+      margin-bottom: 49px;
+      margin-left: 2px;
+    }
+  }
+
+  &__banner {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 690px;
+      height: 609px;
+      z-index: -1;
+      top: 250px;
+      left: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+      top: 0;
+      left: 558px;
+    }
+  }
+
+  &__link {
+    margin-top: 1px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+
+
+    @media (min-width: $tablet-width) {
+      width: 244px;
+      margin-left: 90px;
+      margin-top: 0;
+      padding: 17px 10px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.socials {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__item {
+    width: 30px;
+    height: 30px;
+  }
+
+  &--vk {
+    background-image: url("../../img/icon_vkontakte.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--in {
+    background-image: url("../../img/icon_instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--fc {
+    background-image: url("../../img/icon_facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

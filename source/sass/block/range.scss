@@ -1,0 +1,17 @@
+.range {
+  width: 200px;
+  margin: 20px auto 0;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+  }
+
+  &__button {
+    background-color: transparent;
+    color: $basic-black;
+    font-family: $font;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

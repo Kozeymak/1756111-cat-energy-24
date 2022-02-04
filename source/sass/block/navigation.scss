@@ -1,0 +1,51 @@
+.navigation {
+  &__toggle {
+    width: 24px;
+    height: 16px;
+    background-image: url("../../img/burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__link {
+    font-family: $font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    padding-bottom: 5px;
+    & + & {
+      @media (min-width: $tablet-width) {
+        margin-left: 37px;
+      }
+    }
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}
