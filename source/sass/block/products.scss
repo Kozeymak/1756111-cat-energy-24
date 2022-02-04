@@ -4,7 +4,7 @@
   "A A B B"
   "A A C C"
   "D D D D";
-  padding: 19px 0 25px 0;
+  padding: 19px 20px 25px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -77,6 +77,7 @@
   }
 
   &__compound {
+    margin-top: 3px;
     grid-area: C;
 
     @media (min-width: $tablet-width) {
@@ -85,8 +86,10 @@
   }
 
   &__button {
+    margin-top: 12px;
     grid-area: D;
     height: 40px;
+    width: 280px;
 
     @media (min-width: $tablet-width) {
       width: 100%;

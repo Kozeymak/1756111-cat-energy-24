@@ -1,7 +1,27 @@
 .additional-items {
+  &__container {
+    padding: 24px 0 35px 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row; //Не работает из за контейнера
+  }
+
+  &__unit {
+    margin-bottom: 33px;
+    padding-right: 20px;
+  }
+
+  &__item {
+    &:first-child{
+      border-top: 1px solid $basic-grey-3;
+      border-bottom: 1px solid $basic-grey-3;
+    }
+
+    & + & {
+      border-bottom: 1px solid $basic-grey-3;
+    }
   }
 
   &__title {
@@ -9,6 +29,18 @@
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    padding-bottom: 36px;
+
+    &::after {
+      content: "";
+      width: 53px;
+      height: 2px;
+      background-image: url("../../img/title-line.svg");
+      display: inline-block;
+      vertical-align: middle;
+      background-size: cover;
+      margin-left: 20px;
+    }
   }
 
   &__present {
@@ -17,6 +49,17 @@
     background-position: center;
     width: 280px;
     height: 290px;
+    padding-top: 58px;
+
+    &::before {
+      content: "";
+      width: 78px;
+      height: 80px;
+      background-image: url("../../img/icon_gift.svg");
+      display: block;
+      background-size: cover;
+      margin: 0 auto;
+    }
 
     @media (min-width: $tablet-width) {
       width: 92%;
@@ -31,5 +74,7 @@
     width: 161px;
     text-align: center;
     margin: 0 auto;
+    display: block;
+    margin-top: 50px;
   }
 }
