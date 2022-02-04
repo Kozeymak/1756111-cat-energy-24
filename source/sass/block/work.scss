@@ -1,5 +1,6 @@
 .work {
   padding-bottom: 49px;
+
   &__title {
     font-family: $font;
     font-size: 36px;
@@ -13,9 +14,74 @@
     }
   }
 
+  &__text {
+    display: block;
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 240px;
+      margin-top: 31px;
+      margin-bottom: 57px;
+    }
+  }
+
   &__item {
     margin-bottom: 20px;
     display: flex;
+
+    @media (min-width: $tablet-width) {
+      outline: 1px solid red;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: right;
+
+      &--leaf {
+        background-image: url(../../img/1.svg);
+      }
+
+      &--powder {
+        background-image: url(../../img/2.svg);
+      }
+
+      &--fork {
+        background-image: url(../../img/3.svg);
+      }
+
+      &--clock {
+        background-image: url(../../img/4.svg);
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+      background-color: $basic-green;
+      margin-right: 20px;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &--leaf::before {
+      background-image: url(../../img/icon_leaf.svg);
+    }
+
+    &--powder::before {
+      background-image: url(../../img/icon_powder.svg);
+    }
+
+    &--fork::before {
+      background-image: url(../../img/icon_fork.svg);
+    }
+
+    &--clock::before {
+      background-image: url(../../img/icon_clock.svg);
+    }
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;

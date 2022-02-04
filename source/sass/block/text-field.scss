@@ -13,7 +13,16 @@
     text-transform: uppercase;
     color: $special-dark-grey;
     font-weight: 400;
-    margin-right: 10px;
+    margin-right: 12px;
+
+    &--age {
+      width: 100px;
+      margin-right: 8px;
+    }
+
+    &--weight {
+      margin-right: 16px;
+    }
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -23,13 +32,21 @@
 
   &__input {
     font-family: $font;
-    padding-left: 16px;
+    padding: 10px 16px;
     font-size: 16px;
     text-transform: uppercase;
     color: $special-dark-grey;
     background-color: transparent;
     font-weight: 400;
     border: 1px solid $special-dark-grey-3; //TODO Пожалйуста, подскажи как можно сделать длину инпута до упора, я что то не могу догнать
+
+    &--weight {
+      padding-left: 15px;
+    }
+
+    &--age {
+      padding-left: 14px;
+    }
 
     @media (min-width: $tablet-width) {
       font-size: 20px;

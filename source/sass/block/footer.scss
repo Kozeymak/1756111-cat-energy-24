@@ -1,32 +1,45 @@
 .footer {
   background-color: $basic-grey;
-  max-width: 1280px;
-  padding: 39px 20px 22px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+  &__container {
+    padding: 39px 20px 26px; //TODO Проверь пожалуйста, правильно ли тут по ПП?
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__logo-link {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid $basic-grey-3;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 
   &__socials {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 22px;
+    margin: 17px auto 15px;
   }
 
   &__developed {
+    border-top: 1px solid $basic-grey-3;
+    padding-top: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     @media (min-width: $tablet-width) {
       width: 163px;
+      border-top: none;
     }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 18px;
   }
 }

@@ -20,6 +20,12 @@
     line-height: 20px;
     color: $basic-black;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__list {
@@ -27,6 +33,19 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
+    }
+  }
+
+  &__item {
+    padding-bottom: 5px;
+    & + & {
+      @media (min-width: $tablet-width) {
+        margin-left: 37px;
+      }
+    }
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
     }
   }
 }

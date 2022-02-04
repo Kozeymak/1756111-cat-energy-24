@@ -58,7 +58,6 @@
       width: 127px;
       padding: 0;
       top: 62px;
-      background-color: $basic-white;
     }
   }
 
@@ -77,6 +76,12 @@
       width: 175px;
       text-align: left;
       margin-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 327px;
+      text-align: center;
+      margin-left: 0;
     }
   }
 

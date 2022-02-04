@@ -1,13 +1,14 @@
 .slider {
   margin-top: 40px;
 
-  @media (min-width: $tablet-width) {
-    background-color: $special-grey-3; //Перелив делать гардиентом?
-  }
-
   &__img {
     margin: 0 auto;
     display: block;
+
+    @media (min-width: $tablet-width) {
+      width: 592px;
+      height: 511px;
+    }
   }
 
   &__controls {
