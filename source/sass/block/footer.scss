@@ -9,6 +9,11 @@
       justify-content: space-between;
       padding: 39px 30px 35px;
     }
+
+
+    @media (min-width: $desktop-width) {
+      padding: 46px 30px 35px;
+    }
   }
 
   &__logo-link {

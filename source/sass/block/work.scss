@@ -5,6 +5,10 @@
     padding-top: 25px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+  }
+
   &__title {
     font-family: $font;
     font-size: 36px;
@@ -107,6 +111,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding-top: 33px;
       grid-template-columns: repeat(4, 1fr);
       gap: 60px 80px;
     }

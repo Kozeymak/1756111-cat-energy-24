@@ -7,6 +7,10 @@
     padding-bottom: 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+
   &__container {
     @media (min-width: $desktop-width) {
       display: flex;
@@ -36,6 +40,10 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 85px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: -40px;
     }
   }
 }
