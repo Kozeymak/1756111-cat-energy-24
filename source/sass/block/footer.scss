@@ -2,11 +2,12 @@
   background-color: $basic-grey;
 
   &__container {
-    padding: 39px 20px 26px; //TODO Проверь пожалуйста, правильно ли тут по ПП?
+    padding: 39px 20px 22px; //TODO Проверь пожалуйста, правильно ли тут по ПП?
 
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
+      padding: 39px 30px 35px;
     }
   }
 
@@ -18,11 +19,17 @@
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
+      padding-bottom: 0;
+      margin-top: 2px;
     }
   }
 
   &__socials {
     margin: 17px auto 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 15px;
+    }
   }
 
   &__developed {
@@ -35,11 +42,16 @@
     @media (min-width: $tablet-width) {
       width: 163px;
       border-top: none;
+      padding-top: 0px;
     }
   }
 
   &__text {
     font-size: 16px;
     line-height: 18px;
+  }
+
+  &__icon {
+    padding-top: 6px;
   }
 }

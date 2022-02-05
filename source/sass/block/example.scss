@@ -2,6 +2,11 @@
   background-color: $special-grey-3;
   padding: 25px 0 45px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 60px;
+  }
+
   &__container {
     @media (min-width: $desktop-width) {
       display: flex;
@@ -23,6 +28,14 @@
       font-size: 60px;
       line-height: 60px;
       text-align: left;
+    }
+  }
+
+  &__slider {
+    margin-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 85px;
     }
   }
 }

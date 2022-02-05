@@ -38,6 +38,7 @@
     color: $special-dark-grey;
     background-color: transparent;
     font-weight: 400;
+    flex-grow: 1;
     border: 1px solid $special-dark-grey-3; //TODO Пожалйуста, подскажи как можно сделать длину инпута до упора, я что то не могу догнать
 
     &--weight {

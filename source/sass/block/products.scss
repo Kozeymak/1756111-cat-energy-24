@@ -1,6 +1,6 @@
 .products {
   display: grid;
-  grid-template-areas: //TODO Это правильно?
+  grid-template-areas:
   "A A B B"
   "A A C C"
   "D D D D";
@@ -89,10 +89,6 @@
     margin-top: 12px;
     grid-area: D;
     height: 40px;
-    width: 280px;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
+    width: 100%;
   }
 }

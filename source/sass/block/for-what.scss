@@ -9,6 +9,24 @@
     background-color: $basic-grey;
     padding: 24px 33px 22px 20px;
 
+    @media (min-width: $tablet-width) {
+      padding: 72px 53px 58px;
+
+      &--slim {
+        background-size: 195px 211px;
+        background-image: url("../../img/cat-slim.svg"); //TODO пожалуйста, проверь по ПП (планшет)
+        background-repeat: no-repeat;
+        background-position: 448px 78px;
+      }
+
+      &--strong {
+        background-size: 268px 200px;
+        background-image: url("../../img/cat-strong.svg");
+        background-repeat: no-repeat;
+        background-position: 411px 90px;
+      }
+    }
+
     & + & {
       margin-top: 20px;
 
@@ -75,26 +93,8 @@
     @media (min-width: $tablet-width) {
       border-bottom: none;
       width: 340px;
-      display: block; //TODO Пожалуйста, помоги сделать эту кошку правильно
-
-      &::after {
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
-        background-size: cover;
-      }
-
-      &--slim::after {
-        width: 200px;
-        height: 211px;
-        background-image: url("../../img/cat-slim.svg");
-      }
-
-      &--strong::after {
-        width: 268px;
-        height: 200px;
-        background-image: url("../../img/cat-strong.svg");
-      }
+      margin-top: 25px;
+      margin-bottom: 27px; //TODO Пожалуйста, помоги сделать эту кошку правильно
     }
   }
 

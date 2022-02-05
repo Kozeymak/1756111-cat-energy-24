@@ -4,6 +4,8 @@
 
   @media (min-width: $tablet-width) {
     width: 592px;
+    margin-top: 35px;
+    padding: 0 10px;
   }
 
   &__button {
@@ -13,5 +15,10 @@
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 5px;
+      border-bottom: 1px dotted $basic-black;
+    }
   }
 }

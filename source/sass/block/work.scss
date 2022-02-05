@@ -1,6 +1,10 @@
 .work {
   padding-bottom: 49px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
   &__title {
     font-family: $font;
     font-size: 36px;
@@ -19,7 +23,7 @@
     width: 200px;
 
     @media (min-width: $tablet-width) {
-      width: 240px;
+      width: 245px;
       margin-top: 31px;
       margin-bottom: 57px;
     }
@@ -30,10 +34,9 @@
     display: flex;
 
     @media (min-width: $tablet-width) {
-      outline: 1px solid red;
       display: block;
       background-repeat: no-repeat;
-      background-position: right;
+      background-position: 125px 1px;
 
       &--leaf {
         background-image: url(../../img/1.svg);
@@ -64,6 +67,9 @@
       @media (min-width: $tablet-width) {
         width: 80px;
         height: 80px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
 
@@ -94,9 +100,10 @@
 
   &__list {
     @media (min-width: $tablet-width) {
+      padding-top: 31px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 77px 60px;
     }
 
     @media (min-width: $desktop-width) {

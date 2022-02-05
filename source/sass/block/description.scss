@@ -24,6 +24,7 @@
     @media (min-width: $tablet-width) {
       width: 162px;
       height: 72px;
+      margin-top: 52px;
     }
   }
 
@@ -36,6 +37,7 @@
     @media (min-width: $tablet-width) {
       font-size: 30px;
       line-height: 37px;
+      margin-top: -3px;
     }
   }
 
@@ -74,8 +76,12 @@
       font-size: 20px;
       line-height: 20px;
       width: 175px;
-      text-align: left;
+      text-align: right;
       margin-right: 0;
+      margin-top: 64px;
+      display: flex;
+      flex-direction: column;
+
     }
 
     @media (min-width: $desktop-width) {
@@ -85,7 +91,18 @@
     }
   }
 
+  &__string + &__string {
+    @media (min-width: $tablet-width) {
+      padding-top: 9px;
+    }
+  }
+
   &__subtitle {
     margin-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 65px;
+      padding-right: 15px;
+    }
   }
 }

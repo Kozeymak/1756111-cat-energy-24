@@ -1,13 +1,11 @@
 .slider {
-  margin-top: 40px;
-
   &__img {
     margin: 0 auto;
     display: block;
 
     @media (min-width: $tablet-width) {
-      width: 592px;
-      height: 511px;
+      width: 590px;
+      height: 510px;
     }
   }
 

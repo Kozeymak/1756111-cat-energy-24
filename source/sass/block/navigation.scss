@@ -1,7 +1,7 @@
 .navigation {
   &__toggle {
     width: 24px;
-    height: 16px;
+    height: 18px;
     background-image: url("../../img/burger.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
   }
 
   &__item {
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     & + & {
       @media (min-width: $tablet-width) {
         margin-left: 37px;
