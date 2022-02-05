@@ -17,14 +17,26 @@
         background-image: url("../../img/cat-slim.svg"); //TODO пожалуйста, проверь по ПП (планшет)
         background-repeat: no-repeat;
         background-position: 448px 78px;
+
+        @media (min-width: $desktop-width) {
+          background-image: none;
+        }
       }
 
       &--strong {
         background-size: 268px 200px;
         background-image: url("../../img/cat-strong.svg");
         background-repeat: no-repeat;
-        background-position: 411px 90px;
+        background-position: 410px 90px;
+
+        @media (min-width: $desktop-width) {
+          background-image: none;
+        }
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 36px 52px 58px;
     }
 
     & + & {
@@ -58,6 +70,10 @@
       @media (min-width: $tablet-width) {
         display:none
       }
+
+      @media (min-width: $desktop-width) {
+        display: inline-block;
+      }
     }
 
     &--slim::before {
@@ -67,6 +83,13 @@
       height: 53px;
       margin-right: 19px;
       background-image: url("../../img/cat-slim.svg");
+
+      @media (min-width: $desktop-width) {
+        width: 100px;
+        height: 106px;
+        margin-right: 62px;
+        margin-top: 0px;
+      }
     }
 
     &--strong::before {
@@ -76,6 +99,14 @@
       height: 50px;
       margin-right: 11px;
       background-image: url("../../img/cat-strong.svg");
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 100px;
+        margin-right: 47px;
+        margin-top: 5px;
+        margin-left: -20px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -94,7 +125,11 @@
       border-bottom: none;
       width: 340px;
       margin-top: 25px;
-      margin-bottom: 27px; //TODO Пожалуйста, помоги сделать эту кошку правильно
+      margin-bottom: 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 467px;
     }
   }
 
@@ -132,8 +167,8 @@
 
   &__list {
     @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
